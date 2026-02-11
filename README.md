@@ -1,9 +1,13 @@
-Frontend Setup
+#1. Clone the Repository
+git clone https://github.com/RanaElansary/task-manager-frontend.git
+cd task-manager-frontend
 
-### `npm start
+#Frontend Setup(new terminal):
+```bash
 cd front-end
 npm install
-npm run dev`
+npm start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
