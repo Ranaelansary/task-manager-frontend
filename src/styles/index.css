@@ -1,0 +1,270 @@
+:root {
+  --primary: #7a3cff;        /* purple *
+    accent: #ff6ec7;         /* hot pink */
+  --shadow: 0 15px 30px rgba(180, 136, 255, 0.35);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace;
+}
+
+body {
+  background: linear-gradient(135deg, #ffd1eb, #e0c3ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 900px;
+  border: 2px solid var(--primary);
+  padding: 40px 30px;
+  background-color: #ffffff;
+  box-shadow: var(--shadow);
+  position: relative;
+  border-radius: 60px;
+}
+
+.login-container::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: -6px;
+  bottom: -6px;
+  border: 2px solid var(--primary);
+  z-index: -1;
+  border-radius: 60px;
+}
+
+h1 {
+  color: var(--primary);
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 40px; /* space between email & password */
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid var(--primary);
+  background-color: #fff;
+  font-size: 16px;
+  outline: none;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+input::placeholder {
+  color: #c7a6ff;
+  font-size: 14px;
+}
+
+input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 110, 199, 0.4);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #b388ff;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(180, 136, 255, 0.4);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid var(--primary);
+  margin: 0 10px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-btn {
+  width: 45px;
+  height: 45px;
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.social-btn:hover {
+  background-color: #ffd1eb;
+  transform: scale(1.1);
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--primary);
+}
+
+.footer a {
+  color: #b388ff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2px 6px;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.footer a:hover {
+  background-color: #ffd1eb;
+  color: #ff6ec7;
+}
+.tasks-container {
+  display: flex;           /* display tasks in a row */
+  flex-wrap: wrap;         /* wrap to next row if needed */
+  gap: 20px;               /* space between tasks */
+  justify-content: flex-start; /* or center */
+}
+
+.task-item {
+  background: linear-gradient(135deg, #ff6ec7, #b388ff);
+  color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 220px;            /* width of each task card */
+  box-shadow: 0 6px 15px rgba(180, 136, 255, 0.4);
+  transition: transform 0.3s;
+}
+
+.task-item:hover {
+  transform: scale(1.05);
+}
+
+.task-item button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  color: #b388ff;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: #ffd1eb;
+  color: #7a3cff;
+}
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.task-card {
+  background-color: #fff0f8; /* soft pink */
+  border: 2px solid #7a3cff; /* purple */
+  border-radius: 20px;
+  padding: 30px 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 6px 6px 0px #b388ff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.task-card h2 {
+  color: #7a3cff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.task-card input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #7a3cff;
+  border-radius: 12px;
+  outline: none;
+  font-size: 14px;
+}
+
+.task-card input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 110, 199, 0.4);
+}
+
+.task-card button {
+  padding: 10px;
+  border: none;
+  border-radius: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background:  #7a3cff;
+  color: #fff;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.task-card button:hover {
+  transform: scale(1.05);
+  background: #7a3cff;
+}
+
+.logout-btn {
+  background: #7a3cff; /* solid purple for logout */
+  margin-top: 10px;
+}
+.logout-btn:hover {
+  background: #7a3cff;
+}
