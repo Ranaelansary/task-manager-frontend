@@ -1,5 +1,5 @@
 # Clone the Repository
-git clone https://github.com/RanaElansary/task-manager-frontend.git
+git clone https://github.com/RanaElansary/task-manager-frontend.git                                                                                                                            
 cd task-manager-frontend
 
 # Frontend Setup(new terminal):
