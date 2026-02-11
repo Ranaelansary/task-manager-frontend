@@ -3,7 +3,13 @@
 git clone https://github.com/RanaElansary/task-manager-frontend.git                                                                                                                          
 cd task-manager-frontend
 ```
+## Frontend
 
+- React + TypeScript
+- React Router DOM (for page navigation)
+- Axios (HTTP client)
+- LocalStorage for JWT persistence
+  
 # Frontend Setup(new terminal):
 ```bash
 cd front-end
