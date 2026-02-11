@@ -1,8 +1,8 @@
-#1. Clone the Repository
+# Clone the Repository
 git clone https://github.com/RanaElansary/task-manager-frontend.git
 cd task-manager-frontend
 
-#Frontend Setup(new terminal):
+# Frontend Setup(new terminal):
 ```bash
 cd front-end
 npm install
